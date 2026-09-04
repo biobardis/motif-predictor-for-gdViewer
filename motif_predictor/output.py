@@ -43,18 +43,25 @@ def add_fasta_tag_to_output(output_value: str, fasta_file: str) -> str:
     path_obj = Path(value)
     name = path_obj.name
 
-    if name.lower().endswith(".tsv"):
+    if name.lower().endswith(".motif.tsv"):
+        stem = name[:-10]  # remove ".motif.tsv"
+        if stem.endswith(f".{tag}"):
+            tagged_name = name
+        else:
+            tagged_name = f"{stem}.{tag}.motif.tsv"
+
+    elif name.lower().endswith(".tsv"):
         stem = name[:-4]
         if stem.endswith(f".{tag}"):
             tagged_name = name
         else:
             tagged_name = f"{stem}.{tag}.tsv"
+
     else:
         if name.endswith(f".{tag}"):
             tagged_name = f"{name}.tsv"
         else:
             tagged_name = f"{name}.{tag}.tsv"
-
     return str(path_obj.with_name(tagged_name))
 
 def resolve_output_path(output_dir: str, value: str) -> str:

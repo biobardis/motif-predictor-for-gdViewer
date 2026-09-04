@@ -49,7 +49,7 @@ def run_pipeline(
     num_threads: int = 8,
     num_batches: int | None = None,
     thresh: str = "1e-4",
-    output_file: str = "motif_predictions.tsv",
+    output_file: str ="motif_predictions.motif.tsv",
     fimo_bin: str = "fimo",
     debug: bool = False,
     debug_n_genes: int = 100,

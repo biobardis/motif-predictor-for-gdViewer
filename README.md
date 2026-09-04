@@ -53,7 +53,7 @@ The following command-line arguments are available:
 | `--threads` | No | `8` | Maximum number of FIMO processes that can run in parallel. |
 | `--batches` | No | Same as `--threads` | Number of multi-FASTA batches used for FIMO analysis. |
 | `--thresh` | No | `1e-4` | FIMO p-value threshold used for motif prediction. |
-| `--output` | No | Automatically generated | Optional filename or path for the output TSV. By default, the FASTA filename is included automatically, for example `motif_predictions.FZX.tsv`. |
+| `--output` | No | Automatically generated | Optional filename or path for the output TSV. By default, the FASTA filename is included automatically`. |
 | `--fimo-bin` | No | `fimo` | FIMO executable name or path. |
 | `--debug` | No | Disabled | Enable debug mode. Only the first `--debug-n-genes` genes are processed. |
 | `--debug-n-genes` | No | `100` | Number of genes processed when `--debug` is enabled. Must be at least `1`. |

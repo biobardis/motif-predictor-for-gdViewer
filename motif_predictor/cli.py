@@ -60,10 +60,10 @@ def build_parser() -> argparse.ArgumentParser:
     )
     parser.add_argument(
         "--output",
-        default="motif_predictions.tsv",
+        default="motif_predictions.motif.tsv",
         help=(
             "Base name for the final merged TSV. The FASTA sample name is inserted "
-            "before .tsv automatically, e.g. motif_predictions.FZX.tsv."
+            "before .motif.tsv automatically, e.g. motif_predictions.FZX.motif.tsv."
         ),
     )
     parser.add_argument(
