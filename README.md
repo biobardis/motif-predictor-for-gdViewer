@@ -1,6 +1,6 @@
 # motif-predictor-for-gdViewer
 
-`motif-predictor-for-gdViewer` is a command-line tool for predicting motif occurrences using FIMO and preparing motif data for visualization in [gdViewer](https://github.com/biobardis/jbrowse-plugin-gdViewer).
+`motif-predictor-for-gdViewer` is a command-line tool for predicting motif occurrences using FIMO and preparing motif data for visualization in gdViewer (GitHub repository coming soon).
 
 The program integrates genome annotations, reference genome sequences, and motif matrices to identify motif occurrences in gene regions and their flanking sequences.
 
